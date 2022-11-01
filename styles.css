@@ -1,0 +1,262 @@
+html {
+    background-color: #252432;
+    color: #ccc;
+  }
+  
+  div.main-body {
+    display: grid;
+    grid-template-columns: minmax(200px, auto) 1fr;
+    grid-template-areas: "navbar maincontent";
+    grid-gap: 100px;
+  }
+  
+  nav#navbar {
+    grid-area: navbar;
+    position: fixed;
+    font-family: Sans-Serif;
+  }
+  
+  #navbar > header {
+    font-size: 23px;
+  }
+  
+  #navbar > a {
+    display: block;
+    border: 2px solid #8e9ac3;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #main-doc {
+    grid-area: maincontent;
+    overflow-x: hidden;
+    border-left: 5px solid #8e9ac3;
+    padding: 20px;
+    font-family: Sans-Serif;
+  }
+  
+  #title {
+    font-family: Sans-Serif;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 50px;
+  }
+  
+  header {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  figure {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    gap: 60px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+  }
+  
+  img {
+    border-radius: 20px;
+    max-width: 1400px;
+    height: 400px;
+    margin-left: 50px;
+  }
+  
+  figcaption {
+    text-align: center;
+  }
+  
+  #champion > img {
+    margin-left: 50px;
+  }
+  
+  #champion > figcaption {
+    margin-left: 70px;
+  }
+  
+  #Blitzcrank > img {
+    width: 500px;
+  }
+  
+  #Blitzcrank > figcaption {
+    margin-left: 40px;
+  }
+  
+  #Jinx > img {
+    margin-left: 160px;
+  }
+  #Jinx > figcaption {
+    margin-left: 160px;
+  }
+  #Jhin {
+    margin-left: 100px;
+  }
+  #Jhin > figcaption {
+    margin-left: 40px;
+  }
+  
+  #Nunu > img {
+    width: 500px;
+    margin-left: 30px;
+  }
+  #Nunu > figcaption {
+    margin-left: 20px;
+  }
+  
+  #LeeSin {
+    margin-left: 20px;
+  }
+  #LeeSin > figcaption {
+    margin-left: 50px;
+  }
+  
+  #Katarina > img {
+    width: 500px;
+  }
+  
+  #Yasuo {
+    margin-left: 100px;
+  }
+  
+  #Yasuo > figcaption {
+    margin-left: 50px;
+  }
+  
+  #Mundo > img {
+    width: 500px;
+  }
+  
+  #Mundo > figcaption {
+    margin-left: 20px;
+  }
+  
+  #Darius > img {
+    width: 500px;
+    margin-left: -20px;
+  }
+  
+  code {
+    background-color: #565876;
+    display: block;
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 750px) {
+    div.main-body {
+      grid-template-columns: 1fr;
+      grid-template-areas: "navbar" "maincontent";
+    }
+  
+    nav#navbar {
+      position: inherit;
+      margin-bottom: -80px;
+    }
+  
+    figure {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: auto;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-bottom: 30px;
+      margin-left: -20px;
+    }
+  
+    img {
+      border-radius: 20px;
+      max-width: 1400px;
+      height: 400px;
+    }
+  
+    #rift > img {
+      width: 330px;
+    }
+  
+    #rift > figcaption {
+      margin-left: 33px;
+    }
+    #champion > img {
+      margin-left: 70px;
+    }
+  
+    #Braum > img {
+      width: 300px;
+    }
+  
+    #Braum > figcaption {
+      margin-left: 50px;
+    }
+  
+    #Blitzcrank > figcaption {
+      margin-left: 40px;
+    }
+  
+    #Blitzcrank > img {
+      width: 350px;
+    }
+  
+    #Jinx > img {
+      margin-left: 70px;
+    }
+    #Jinx > figcaption {
+      margin-left: 20px;
+    }
+  
+    #Jhin > img {
+      margin-left: -30px;
+    }
+  
+    #Jhin > figcaption {
+      margin-left: -30px;
+    }
+  
+    #Nunu > img {
+      width: 330px;
+    }
+  
+    #LeeSin > img {
+      width: 330px;
+      margin-left: 25px;
+    }
+  
+    #Katarina > img {
+      width: 330px;
+    }
+  
+    #Katarina > figcaption {
+      margin-left: 30px;
+    }
+  
+    #Yasuo > img {
+      margin-left: 10px;
+    }
+  
+    #Yasuo > figcaption {
+      margin-left: -40px;
+    }
+  
+    #Mundo > img {
+      width: 330px;
+    }
+  
+    #Mundo > figcaption {
+      margin-left: 35px;
+    }
+  
+    #Darius > img {
+      width: 330px;
+      margin-left: 40px;
+    }
+  
+    #Darius > figcaption {
+      margin-left: 35px;
+    }
+  }
+  
